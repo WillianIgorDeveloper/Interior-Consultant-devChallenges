@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Willian Igor">
+
+    <!--========== Stylesheet ==========-->
+    <link rel="stylesheet" href="assets/stylesheet/global.css" />
+
+    <!--========== Google Icons ==========-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    <!--========== Google Fonts ==========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:ital,wght@0,400;0,700;1,500&display=swap" rel="stylesheet">
+
+    <!--========== Guide ==========-->
+    <link rel="shortcut icon" href="assets/icons/devchallenges.png" type="image/x-icon">
+    <title>Interior Consultant - devChallenges</title>
+  </head>
+  <body>
+    <header class="header">
+      <p>This Interior</p>
+      <nav>
+        <span class="material-symbols-rounded menuHandle">menu</span>
+        <ul id="menu">
+          <li><span class="material-symbols-rounded menuHandle">close</span></li>
+          <li><a href="#" class="menuHandle active">Home</a></li>
+          <li><a href="#" class="menuHandle">Collection</a></li>
+          <li><a href="#" class="menuHandle">About</a></li>
+          <li><a href="#" class="menuHandle">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="content-container">
+          <div class="text-container">
+            <h1>Modern interior</h1>
+            <p>A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+            <a href="#">Read more<span class="material-symbols-rounded">arrow_forward</span></a>
+          </div>
+          <img src="assets/img/photo1.png" alt="living room">
+        </div>
+        <div class="card">
+          <header class="card-header">
+            <img src="assets/img/photo2.png" alt="Aliza Webber">
+            <div class="profile-text">
+              <p>Aliza Webber</p>
+              <p>Interior designer</p>
+            </div>
+          </header>
+          <h2>Designed in 2020 by <br> Aliza Webber</h2>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>created by Willianprof - devChallenges.io</p>
+    </footer>
+    <!--========== Script ==========-->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.menuHandle').forEach(element => {
+          element.onclick = () => {
+            document.querySelector('#menu').classList.toggle('show')
+          }
+        });        
+      })
+    </script>
+  </body>
+</html>
